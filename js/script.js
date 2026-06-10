@@ -4,6 +4,6 @@ mapboxgl.accessToken =
 const myMap = new mapboxgl.Map({
   container: 'map',
   style: 'mapbox://styles/shaoweiw/cmq7472d3001101sqhlj42u35',
-  center: [-122.27, 37.8],
-  zoom: 9
+  center: [-124.15, 41.14],
+  zoom: 12
 });
