@@ -2,25 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Sue-meg</title>
+    <title>Reexamining Our Past: Sue-meg</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.css"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
-
     <div id="map"></div>
+
+    <h1>Reexamining Our Past: Sue-meg</h1>
+    <div id="hint">Tap a point to enter · drag &amp; zoom to explore</div>
+
+    <aside id="focus-panel">
+      <button id="panel-close" aria-label="Close">×</button>
+      <div id="panel-body"></div>
+    </aside>
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.24.0/mapbox-gl.js"></script>
     <script src="js/script.js"></script>
-
-    <h1> Reexamining Our Past: Sue-meg </h1>
-    
   </body>
 </html>
