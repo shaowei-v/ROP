@@ -31,17 +31,19 @@ map.on('load', function () {
     const p = e.features[0].properties;
 
     const popupContent = `
-      <div style="max-width: 240px;">
-        <h3 style="margin:0 0 6px;">${p.feature_name}</h3>
-        <p style="margin:2px 0;"><strong>Former name:</strong> ${p.rop_renaming_former_name}</p>
+      <div style="max-width: 260px; line-height:1.4;">
+        <h3 style="margin:0 0 2px;">${p.feature_name}</h3>
+        <p style="margin:0 0 8px; font-size:12px; color:#888;">
+          formerly ${p.rop_renaming_former_name}
+        </p>
+        <p style="margin:2px 0;">${p.description}</p>
         <p style="margin:2px 0;"><strong>Meaning:</strong> ${p.rop_renaming_meaning}</p>
         <p style="margin:2px 0;"><strong>Tribal partner:</strong> ${p.rop_renaming_tribal_partner}</p>
-        <p style="margin:2px 0;"><strong>Park:</strong> ${p.rop_renaming_park_uinit}, ${p.rop_renaming_park_district}</p>
+        <p style="margin:2px 0;"><strong>Park:</strong> ${p.rop_renaming_park_unit}, ${p.rop_renaming_park_district}</p>
         ${p.image_link
-          ? `<img src="${p.image_link}" alt="${p['alt-text']}" style="width:100%; border-radius:5px; margin:8px 0;">`
+          ? `<img src="${p.image_link}" alt="${p['alt-text']}" style="width:100%; border-radius:5px; margin:8px 0 4px;">
+             <p style="margin:0; font-size:12px; color:#666; font-style:italic;">${p.caption}</p>`
           : ''}
-        <p style="margin:2px 0;">${p.description}</p>
-        <p style="margin:2px 0;"><em>${p.caption}</em></p>
       </div>
     `;
 
@@ -57,5 +59,4 @@ map.on('load', function () {
   map.on('mouseleave', 'points-layer', () => {
     map.getCanvas().style.cursor = '';
   });
-  
 });
