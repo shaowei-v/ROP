@@ -1,7 +1,7 @@
 mapboxgl.accessToken =
   'pk.eyJ1Ijoic2hhb3dlaXciLCJhIjoiY21xNzN3YnZiMDdsMTJyb2d4cmhsMWlqbyJ9.UzSZhQi1J3OhSw9uqHUL0w';
 
-const OVERVIEW = { center: [-124.15, 41.14], zoom: 10, pitch: 0, bearing: 0 };
+const OVERVIEW = { center: [-124.15, 41.14], zoom: 12, pitch: 0, bearing: 0 };
 const PANEL_W = 460;
 
 const map = new mapboxgl.Map({
@@ -51,7 +51,7 @@ function enterFocus(feature) {
 
   map.flyTo({
     center: coords,
-    zoom: 14,
+    zoom: 16,
     pitch: 60,
     bearing: 20,
     duration: 1800,
