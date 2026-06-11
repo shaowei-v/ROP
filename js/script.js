@@ -36,7 +36,6 @@ map.on('load', function () {
         <p style="margin:0 0 8px; font-size:12px; color:#888;">
           formerly ${p.rop_renaming_former_name}
         </p>
-        <p style="margin:2px 0;">${p.description}</p>
         <p style="margin:2px 0;"><strong>Meaning:</strong> ${p.rop_renaming_meaning}</p>
         <p style="margin:2px 0;"><strong>Tribal partner:</strong> ${p.rop_renaming_tribal_partner}</p>
         <p style="margin:2px 0;"><strong>Park:</strong> ${p.rop_renaming_park_unit}, ${p.rop_renaming_park_district}</p>
